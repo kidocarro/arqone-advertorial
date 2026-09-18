@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arquitetura estratégica: quando a casa é decidida antes do primeiro tijolo</title>
+<meta name="description" content="Entenda como a ordem das decisões impacta o custo, o prazo e a rotina de quem constrói ou reforma no noroeste paulista.">
+<!--
+  ESPECIAL PUBLICITÁRIO · Arq One
+  Diagramação no padrão de "especial publicitário" de portal de notícias (topo com links, barra
+  principal, selo, título, subtítulo, autoria, foto, compartilhar, corpo com intertítulos, box do
+  autor com galeria, selo de responsabilidade do anunciante).
+  A identidade do veículo (logotipo, cor da barra) é PLACEHOLDER: a diagramação final é feita pela
+  equipe comercial do portal onde a peça for veiculada. Não reproduzir marca de veículo real.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        portal: '#12365C', 'portal-dark': '#0C2740', tag: '#F5A623',
+        ink: '#1A1A1A', body: '#333333', muted: '#666666', rule: '#E6E6E6', pill: '#F0F0F0',
+        marrom: '#66432F'
+      },
+      fontFamily: { sans: ['"Open Sans"', 'system-ui', 'sans-serif'] },
+      maxWidth: { col: '640px' }
+    }
+  }
+}
+</script>
+<style>
+  body { -webkit-font-smoothing: antialiased; }
+  .article p { font-size: 17px; line-height: 1.65; color: #333; margin-bottom: 22px; }
+  .article h2 { font-size: 22px; font-weight: 700; color: #1A1A1A; line-height: 1.3; margin: 34px 0 14px; }
+  .article h2.closing { font-size: 24px; }
+  .toplink { font-size: 12px; font-weight: 700; letter-spacing: -.01em; }
+  .gallery-track { transition: transform .35s ease; }
+  @media (prefers-reduced-motion: reduce) { .gallery-track { transition: none; } }
+</style>
+</head>
+<body class="bg-white text-body font-sans">
+
+<!-- BARRA SUPERIOR DE LINKS (placeholder do veículo) -->
+<div class="border-b border-rule">
+  <div class="max-w-6xl mx-auto px-4 h-8 flex items-center gap-4 overflow-x-auto whitespace-nowrap">
+    <a class="toplink text-portal" href="#">portal</a><a class="toplink text-portal" href="#">notícias</a><a class="toplink text-[#0a7d3b]" href="#">esportes</a><a class="toplink text-[#c77800]" href="#">entretenimento</a><a class="toplink text-[#8e2a8e]" href="#">vídeos</a><a class="toplink text-portal" href="#">economia</a><a class="toplink text-[#0d6b9e]" href="#">região</a>
+  </div>
+</div>
+
+<!-- BARRA PRINCIPAL (placeholder do veículo — cor e logotipo a substituir) -->
+<header class="bg-portal text-white">
+  <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between gap-4">
+    <div class="flex items-center gap-4">
+      <button type="button" class="flex items-center gap-2 text-[11px] font-700 uppercase tracking-wide" aria-label="Menu"><span class="block w-5 space-y-1"><span class="block h-[2px] bg-white"></span><span class="block h-[2px] bg-white"></span><span class="block h-[2px] bg-white"></span></span><span class="hidden sm:inline font-bold">Menu</span></button>
+      <a href="#" class="font-extrabold text-2xl tracking-tight leading-none">n<span class="text-tag">p</span></a>
+    </div>
+    <div class="hidden md:flex items-center gap-2 font-extrabold text-lg tracking-wide uppercase"><span class="font-semibold">Noroeste</span><span class="bg-white text-portal px-2 py-[2px] rounded-sm">Paulista</span></div>
+    <div class="flex items-center gap-3">
+      <div class="hidden sm:flex items-center bg-portal-dark rounded-sm px-3 h-8 w-44 text-[11px] font-bold uppercase text-white/80"><span class="mr-2">&#9906;</span>Buscar</div>
+      <a href="#" class="flex items-center gap-2 text-[11px] font-bold"><span class="inline-block w-6 h-6 rounded-full bg-white/20"></span><span class="hidden sm:inline">Entrar</span></a>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-col mx-auto px-4">
+
+  <!-- SELO -->
+  <div class="pt-7">
+    <span class="inline-block bg-tag text-ink text-[10px] font-extrabold uppercase tracking-[.08em] px-2 py-1">Especial publicitário</span>
+  </div>
+
+  <!-- TÍTULO E SUBTÍTULO -->
+  <h1 class="font-extrabold text-ink text-[28px] sm:text-[34px] leading-[1.15] mt-3">Arquitetura estratégica: quando a casa é decidida antes do primeiro tijolo</h1>
+  <p class="text-[15px] leading-snug text-muted mt-3">Entenda como a ordem das decisões impacta diretamente o custo, o prazo e a rotina de quem constrói ou reforma no noroeste paulista.</p>
+
+  <!-- AUTORIA -->
+  <div class="flex items-center gap-3 mt-5">
+    <!-- avatar/logo do anunciante: substituir pelo logotipo oficial em campo sólido -->
+    <div class="w-10 h-10 rounded-full bg-[#FFFAF5] border border-rule flex items-center justify-center text-[8px] font-bold tracking-wider text-marrom">ARQ ONE</div>
+    <div>
+      <p class="text-[12px] font-bold text-ink uppercase">Por Arq One Arquitetura e Interiores</p>
+      <p class="text-[11px] text-muted">18/09/2026 10h00 · Rio Preto (SP)</p>
+    </div>
+  </div>
+
+  <!-- FOTO DE CAPA -->
+  <figure class="mt-6">
+    <!-- IMAGEM ILUSTRATIVA gerada por IA (Higgsfield). Antes de veicular, substituir por foto real de projeto da Arq One: pela regra de marca, imagem gerada não pode ser apresentada como obra entregue. -->
+    <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CN35dCKtHlDVKZnVwwQzE0vtcz/hf_20260918_183149_e87e4f5b-aa83-4378-a0ae-1d3ec3b1d5b5.png" alt="Sala integrada à varanda coberta, com luz natural e materiais em madeira e pedra" class="w-full aspect-[3/2] object-cover rounded-sm">
+    <figcaption class="text-[11px] text-muted mt-2">Imagem ilustrativa.</figcaption>
+  </figure>
+
+  <!-- COMPARTILHAR -->
+  <div class="grid grid-cols-3 gap-2 mt-4" aria-label="Compartilhar">
+    <a href="#" class="h-9 rounded-sm bg-pill flex items-center justify-center text-[#1877F2] font-extrabold text-sm" aria-label="Compartilhar no Facebook">f</a>
+    <a href="https://wa.me/?text=Arquitetura%20estrat%C3%A9gica%3A%20quando%20a%20casa%20%C3%A9%20decidida%20antes%20do%20primeiro%20tijolo" class="h-9 rounded-sm bg-pill flex items-center justify-center text-[#25D366]" aria-label="Compartilhar no WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9c1.6.7 2.2.8 3 .6a2.6 2.6 0 0 0 1.7-1.2 2 2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></svg></a>
+    <a href="#" class="h-9 rounded-sm bg-pill flex items-center justify-center text-muted" aria-label="Mais opções de compartilhamento"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4" stroke="currentColor" stroke-width="2"/></svg></a>
+  </div>
+
+  <!-- CORPO -->
+  <article class="article mt-8">
+
+    <p>Durante muito tempo, a arquitetura foi vista como um elemento estético — o desenho bonito que chega depois que o terreno já foi comprado e a obra já foi decidida. Esse cenário vem mudando. Cada vez mais famílias do noroeste paulista entendem que é o projeto que define o custo, o prazo e a rotina de uma casa, muito antes do primeiro tijolo.</p>
+
+    <p>Mais do que projetar ambientes bonitos, a arquitetura estratégica organiza a ordem das decisões: o que precisa ser definido primeiro, o que custa cada escolha e como a casa vai funcionar para quem mora nela.</p>
+
+    <p>No nosso escritório, em Rio Preto, esse trabalho tem nome e processo: o Método VisionOne. Ele nasceu de uma constatação simples, que a nossa equipe — arquitetos e engenheiros com experiência de obra — viu se repetir em canteiros de toda a região: quase nenhuma obra estoura por causa do material. Ela estoura por causa da decisão tomada fora de hora.</p>
+
+    <h2>Arquitetura alinhada à rotina</h2>
+
+    <p>Cada família tem um uso próprio para a casa. Um casal que trabalha de casa precisa de um escritório que não fique na mesa de jantar. Uma família com três filhos precisa de uma lavanderia perto dos quartos, e não do outro lado do terreno. Quem recebe muito precisa de uma cozinha que converse com a área externa.</p>
+
+    <p>Quando o projeto é desenvolvido sem considerar essa rotina, os problemas aparecem depois de pronto: circulação apertada, quarto que vira depósito, cozinha que não recebe. É o erro que nenhum acabamento conserta — e é caro demais para corrigir morando.</p>
+
+    <p>Por isso, o projeto precisa nascer alinhado à vida real. Antes do primeiro traço, fazemos um briefing de rotina e uma leitura técnica do terreno: recuos, taxa de ocupação, restrições da prefeitura. A ordem das decisões é definida ali.</p>
+
+    <h2>Planejamento que reduz improvisos</h2>
+
+    <p>Um dos maiores desafios em obras residenciais é a falta de sequência. Segundo a pesquisa CAU/BR–Datafolha de 2022, 96% dos brasileiros consideram o arquiteto indispensável numa obra — mas só 18% contratam um arquiteto ou engenheiro quando chega a hora de construir. Os outros 82% tocam a obra sem projeto.</p>
+
+    <p>O resultado é conhecido: o ponto da tomada decidido no dia em que o eletricista chega, a janela escolhida com a alvenaria pronta, a parede refeita pela segunda vez. Ninguém decide mal por má-fé — decide mal porque a obra está parada esperando resposta, e no canteiro não existe alternativa barata.</p>
+
+    <p>Quem já acompanhou obra de perto sabe: previsibilidade é o que mais pesa em qualquer projeto. Por isso, o nosso trabalho não termina no desenho: entregamos um caderno executivo compatibilizado — elétrica, hidráulica e estrutura resolvidas no arquivo, não dentro da parede — e um memorial estimativo em R$/m², apresentado antes do fechamento do projeto. O investimento aparece antes da decisão, não depois da fundação.</p>
+
+    <h2>Interiores e marcenaria: a ordem importa</h2>
+
+    <p>Uma inversão comum na região é contratar a marcenaria antes do projeto de interiores. O móvel sob medida chega e encontra a tomada no lugar errado, o ponto de água atrás do armário, a geladeira que não cabe no vão. A marcenaria não errou — ela foi medida antes de a casa estar decidida.</p>
+
+    <p>No Método, a marcenaria é definida durante o projeto de interiores, junto com os pontos elétricos, a iluminação e os eletrodomésticos, e só é medida quando piso e forro estão prontos. O projeto de fábrica é compatibilizado antes do corte. Errar na tela custa zero; errar no MDF custa o móvel inteiro.</p>
+
+    <h2>Muito além da estética</h2>
+
+    <p>A arquitetura estratégica não se limita à aparência do ambiente. Ela influencia diretamente quanto a casa custa para construir, quanto tempo leva e como ela funciona nos dez anos seguintes.</p>
+
+    <p>Um projeto bem resolvido protege o investimento: numa casa de 250 m², o projeto completo representa uma fração pequena da obra, e basta o improviso consumir uma parcela equivalente para ter custado o projeto inteiro. O projeto não disputa espaço com a obra — ele protege o restante.</p>
+
+    <p>Mais do que acompanhar tendências, acreditamos em decisões consistentes, tomadas na ordem certa, capazes de permanecer relevantes ao longo do tempo e de gerar valor real para quem mora.</p>
+
+    <p>Porque, quando a casa é pensada estrategicamente, a arquitetura deixa de ser um gasto e passa a ser previsibilidade.</p>
+
+    <h2 class="closing">Investimento em previsibilidade, em rotina e em patrimônio.</h2>
+
+    <p>E, no fim, são essas decisões que ultrapassam o desenho e impactam aquilo que realmente importa: a família, a rotina e a casa definitiva — aquela que se constrói uma vez e não precisa refazer.</p>
+
+    <p>E você, já parou para pensar se a sua próxima obra vai ser decidida na mesa ou no canteiro?</p>
+
+  </article>
+
+  <!-- BOX DO ANUNCIANTE COM GALERIA -->
+  <section class="mt-10" aria-label="Sobre o anunciante">
+    <p class="text-[13px] font-bold text-ink mb-3">Arq One — Arquitetura e Interiores</p>
+
+    <div class="relative overflow-hidden rounded-sm bg-[#111]" id="gallery">
+      <div class="gallery-track flex" id="gallery-track">
+        <!-- IMAGENS ILUSTRATIVAS geradas por IA. Substituir por fotos de projetos reais (nome do projeto + decisão explicada na legenda) antes de veicular. -->
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CN35dCKtHlDVKZnVwwQzE0vtcz/hf_20260918_183149_585094ee-cc17-4fb6-bb27-daf0060a5bbd.png" alt="Fachada de residência contemporânea em condomínio" class="min-w-full aspect-[3/2] object-cover">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CN35dCKtHlDVKZnVwwQzE0vtcz/hf_20260918_183149_2799d377-3632-45cf-93af-baa7136a45ac.png" alt="Cozinha integrada com marcenaria em madeira" class="min-w-full aspect-[3/2] object-cover" loading="lazy">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CN35dCKtHlDVKZnVwwQzE0vtcz/hf_20260918_183148_19c75368-2ead-4130-a024-9cf7ceaf4c2a.png" alt="Arquiteta e engenheiro em visita técnica de obra" class="min-w-full aspect-[3/2] object-cover" loading="lazy">
+      </div>
+      <button type="button" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 text-ink font-bold" id="prev" aria-label="Foto anterior">&#8249;</button>
+      <button type="button" class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 text-ink font-bold" id="next" aria-label="Próxima foto">&#8250;</button>
+      <div class="absolute left-0 right-0 bottom-0 bg-black/60 text-white text-[11px] px-3 py-2 flex items-center gap-2"><span class="bg-white text-ink font-bold px-1 rounded-sm" id="counter">1/3</span><span id="caption">Fachada — imagem ilustrativa.</span></div>
+    </div>
+    <div class="grid grid-cols-3 gap-2 mt-2" id="thumbs">
+      <button type="button" class="aspect-[3/2] rounded-sm overflow-hidden border-2 border-tag" data-i="0" aria-label="Foto 1"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CN35dCKtHlDVKZnVwwQzE0vtcz/hf_20260918_183149_585094ee-cc17-4fb6-bb27-daf0060a5bbd.png" alt="" class="w-full h-full object-cover"></button>
+      <button type="button" class="aspect-[3/2] rounded-sm overflow-hidden border-2 border-transparent" data-i="1" aria-label="Foto 2"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CN35dCKtHlDVKZnVwwQzE0vtcz/hf_20260918_183149_2799d377-3632-45cf-93af-baa7136a45ac.png" alt="" class="w-full h-full object-cover"></button>
+      <button type="button" class="aspect-[3/2] rounded-sm overflow-hidden border-2 border-transparent" data-i="2" aria-label="Foto 3"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CN35dCKtHlDVKZnVwwQzE0vtcz/hf_20260918_183148_19c75368-2ead-4130-a024-9cf7ceaf4c2a.png" alt="" class="w-full h-full object-cover"></button>
+    </div>
+
+    <p class="text-[15px] leading-relaxed text-body mt-6">Escritório de projeto residencial de médio e alto padrão em São José do Rio Preto (SP). Projetos de arquitetura, interiores e assessoria de obra conduzidos pelo Método VisionOne. Quem executa é a construtora ou a equipe que o cliente escolher — como não vendemos obra, o projeto não carrega interesse embutido.</p>
+    <p class="text-[14px] leading-relaxed text-muted mt-3">
+      <a class="font-bold text-portal underline" href="https://arqone-quiz.vercel.app/">Diagnóstico rápido: em que ponto da decisão a sua obra está</a> ·
+      <a class="font-bold text-portal underline" href="https://arqone-calculadora.vercel.app/">Estimativa de investimento em R$/m²</a> ·
+      <a class="font-bold text-portal underline" href="https://instagram.com/arqone_arquitetura" rel="noopener">@arqone_arquitetura</a> ·
+      <a class="font-bold text-portal underline" href="https://wa.me/5517996799933" rel="noopener">WhatsApp (17) 99679-9933</a>
+    </p>
+  </section>
+
+  <!-- SELO DE RESPONSABILIDADE -->
+  <div class="text-center mt-10 mb-8">
+    <span class="inline-block bg-tag text-ink text-[10px] font-extrabold uppercase tracking-[.08em] px-2 py-1">Conteúdo de responsabilidade do anunciante</span>
+    <p class="text-[11px] text-muted mt-4 max-w-md mx-auto">Fontes citadas: CAU/BR–Datafolha, <em>Percepções da sociedade sobre Arquitetura e Urbanismo</em>, 2022 (n = 2.495). Valores de projeto em R$/m² são apresentados pela Arq One antes da decisão.</p>
+  </div>
+
+  <!-- NEWSLETTER (elemento padrão do veículo — placeholder) -->
+  <aside class="border border-rule rounded-sm p-5 mb-12 flex items-center gap-4">
+    <div class="w-16 h-16 rounded-sm bg-pill shrink-0"></div>
+    <div>
+      <p class="font-bold text-ink text-[15px]">Resumo do dia</p>
+      <p class="text-[13px] text-muted">De segunda a sábado, as notícias que você não pode perder diretamente no seu e-mail.</p>
+    </div>
+  </aside>
+
+</main>
+
+<script>
+  (function () {
+    const track = document.getElementById('gallery-track'), counter = document.getElementById('counter'), caption = document.getElementById('caption');
+    const caps = ['Fachada — imagem ilustrativa.', 'Cozinha integrada, marcenaria compatibilizada antes do corte — imagem ilustrativa.', 'Visita técnica: acompanhamento de obra — imagem ilustrativa.'];
+    const thumbs = Array.from(document.querySelectorAll('#thumbs button'));
+    let i = 0;
+    const go = n => { i = (n + 3) % 3; track.style.transform = `translateX(-${i * 100}%)`; counter.textContent = `${i + 1}/3`; caption.textContent = caps[i]; thumbs.forEach((t, k) => t.classList.toggle('border-tag', k === i)); thumbs.forEach((t, k) => t.classList.toggle('border-transparent', k !== i)); };
+    document.getElementById('prev').addEventListener('click', () => go(i - 1));
+    document.getElementById('next').addEventListener('click', () => go(i + 1));
+    thumbs.forEach(t => t.addEventListener('click', () => go(Number(t.dataset.i))));
+  })();
+</script>
+</body>
+</html>
